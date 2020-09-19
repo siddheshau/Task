@@ -1,0 +1,25 @@
+﻿<Window x:Class="UserInformationSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserInformationSystem"
+        mc:Ignorable="d"
+        Title="User Information System" Height="450" Width="800" Background="Bisque" x:Name="LoginScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" x:Name="lblName" Content="User Name :" FontWeight="Bold" HorizontalAlignment="Right" Margin="5,5,0,0"></Label>
+        <Label Grid.Row="1" Grid.Column="0" x:Name="lblPassword" Content="Password :" FontWeight="Bold" HorizontalAlignment="Right" Margin="5,5,0,0"></Label>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtName" Width="200" HorizontalAlignment="Left" BorderThickness="2" Margin="5,5,0,0"></TextBox>
+        <PasswordBox Grid.Row="1" Grid.Column="1"  x:Name="txtPassword" BorderThickness="2" Width="200" HorizontalAlignment="Left" Margin="5,5,0,0"/>
+        <Button Grid.Column="0" Grid.Row="2" Height="20" VerticalAlignment="Top" Content="Login" Click="btnSubmit_Click" Margin="5,7,0,0"></Button>
+    </Grid>
+</Window>
